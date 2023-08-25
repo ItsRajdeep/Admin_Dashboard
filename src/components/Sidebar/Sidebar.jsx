@@ -13,8 +13,8 @@ const Sidebar = () => {
     const [selected, setSelected] = useState(0);
     const [clicked, setClicked] = useState(true);
     return (
-        <div className="sidebar">
-            <div style={width < 1200 && clicked? { transform:" translate(-1000px)"}: {transform:" translate(-15px)"}}>
+        <div className="sidebar"style={width < 1200 && clicked? { transform:" translate(-300px)", width: "100%" ,height:"5%"}: {transform:" translate(-15px)" , width: "100%"}} >
+            <div style={width < 1200 && clicked? { width: "15rem" ,height: "45px"}: { width: "100%" ,height: "500px"}} >
 
                 <div className="logo">
                     <img src={Logo} alt='This is a logo'/>
@@ -47,7 +47,7 @@ const Sidebar = () => {
 <img className='image' onClick={()=>{
     clicked? setClicked(false) :setClicked(true);
     console.log(clicked);
-}} style={clicked? { transform:" translate(-250px)"} : {transform:" translate(-65px)"}} src={hamburger} alt='This is a icon'/>
+}} style={clicked? { transform:" translate(55px)"} : {transform:" translate(-50px)"}} src={hamburger} alt='This is a icon'/>
         </div>
     )
 }
