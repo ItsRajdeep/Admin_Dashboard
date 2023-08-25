@@ -17,6 +17,7 @@ const rows = [
   createData("Big Baza Bang ", 18908424, "2 March 2022", "Pending"),
   createData("Mouth Freshner", 18908424, "2 March 2022", "Approved"),
   createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
+
 ];
 
 
@@ -24,21 +25,22 @@ const makeStyle=(status)=>{
   if(status === 'Approved')
   {
     return {
-      background: 'rgb(145 254 159 / 47%)',
-      color: 'green',
+      // background: 'white',
+      color: 'rgb(0,250,0)',
     }
   }
   else if(status === 'Pending')
   {
     return{
-      background: '#ffadad8f',
-      color: 'red',
+      // background: 'rgb(200,0,0)',
+      color: 'rgb(255,5,2)',
+      textShadow: "1px 1px 1px black"
     }
   }
   else{
     return{
-      background: '#59bfff',
-      color: 'white',
+      // background: 'blue',
+      color: 'skyblue',
     }
   }
 }
@@ -46,10 +48,10 @@ const makeStyle=(status)=>{
 export default function BasicTable() {
   return (
       <div className="Table">
-      <h3>Recent Orders</h3>
+      <h2>Recent Orders</h2>
         <TableContainer
           component={Paper}
-          style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
+          style={{ boxShadow: "0px 13px 20px 0px #000" }}
         >
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>

@@ -1,32 +1,49 @@
+.Table{
+  color: white;
+  
+}
 .MuiTableRow-root > * {
   padding: 10px;
 }
 
 .MuiTableRow-root.MuiTableRow-head > * {
   font-weight: bold !important;
+  background: rgb(0, 130, 230) !important;
+  color: white  !important;
 }
 
 .Table td,
 th {
+  background: rgba(0, 0, 0, 0.7) !important;
   border: none !important;
+  color: rgb(255, 255, 255)  !important;
 }
 
 .Table:first-child {
   border-radius: 0.7rem !important;
-}
-.status {
-  padding: 8px;
-  border-radius: 9px;
+  font-weight: bold !important;
 }
 
-.Details {
-  color: #00b5ff !important;
+.status {
+  padding: 8px;
+  /* font-weight: bold; */
+  /* text-shadow: 1px 1px 1px black; */
+}
+
+.Details:hover {
+  cursor: pointer;
+  color: skyblue !important;
 }
 
 @media screen and (max-width: 1200px) {
   .Table {
-    width: 170%;
-    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    overflow-x: scroll ;
+    margin-right: 1rem;
   }
 }
 
@@ -37,6 +54,7 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 23rem;
+    width: 85%;
+    overflow-x: scroll ;
   }
 }

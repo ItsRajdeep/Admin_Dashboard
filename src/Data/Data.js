@@ -5,12 +5,11 @@ import {
   UilUsersAlt,
   UilPackage,
   UilChart,
-  UilSignOutAlt,
 } from "@iconscout/react-unicons";
 
 // Analytics Cards imports
 import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
+
 
 // Recent Card Imports
 import img1 from "../imgs/img1.png";
@@ -46,8 +45,8 @@ export const cardsData = [
   {
     title: "Sales",
     color: {
-      backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
+      backGround: "rgb(0, 130, 230)",
+      boxShadow: "0px 10px 20px 0px black",
     },
     barValue: 70,
     value: "25,970",
@@ -62,8 +61,8 @@ export const cardsData = [
   {
     title: "Revenue",
     color: {
-      backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
-      boxShadow: "0px 10px 20px 0px #FDC0C7",
+      backGround: "rgb(0, 130, 230)",
+      boxShadow: "0px 10px 20px 0px black",
     },
     barValue: 80,
     value: "14,270",
@@ -78,9 +77,8 @@ export const cardsData = [
   {
     title: "Expenses",
     color: {
-      backGround:
-        "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
-      boxShadow: "0px 10px 20px 0px #F9D59B",
+      backGround:"rgb(0, 130, 230)",
+      boxShadow: "0px 10px 20px 0px black",
     },
     barValue: 60,
     value: "4,270",

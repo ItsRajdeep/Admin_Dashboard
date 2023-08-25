@@ -4,13 +4,28 @@
     /* padding-top: 1rem; */
     width: 95%;
     justify-content: space-evenly;
+    margin-left: 1rem;
 }
-
+.RightSide h2,h3{
+    color: white;
+}
 
 @media screen and (max-width: 1200px) {
     .RightSide{
-        justify-content: flex-start;
         margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+        
+        margin-left: 0rem;
+    }
+    .RightSide>div{
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+       
+    }
+    .RightSide h2,h3{
+        text-align: center;
     }
 }
 
@@ -19,10 +34,15 @@
     .RightSide{
         width: 100%;
         margin-top: 0;
+        justify-content: space-evenly;
     }
     .RightSide>div{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .RightSide h2{
+        text-align: center;
+    }
 }
+

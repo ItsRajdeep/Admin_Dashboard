@@ -1,0 +1,129 @@
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms ease;
+  padding-top: 4rem;
+  color: white;
+  margin-left: 1rem;
+}
+.sidebar>img{
+  display: none;
+}
+.logo{
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: 1rem;
+  /* justify-content: center;    */
+  font-weight: bold;
+}
+.logo img{
+  width: 1.5rem;
+  padding-right: 10px;
+}
+.logo span{
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  text-shadow: 2px 1px 1px black;
+}
+.logo span span{
+  /* color: rgb(25, 13, 255); */
+  color: rgb(0, 130, 230);
+}
+
+.menu{
+  display: flex;
+  flex-direction: column ;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.menuitem{
+  padding-left: 1rem;
+  text-shadow: 1px 1px 1px black;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;  
+  font-size: 1rem;
+}
+.menuitem:hover{
+
+  border-bottom: 1px solid rgba(134, 134, 134, 0.742);
+  border-top: 1px solid rgba(134, 134, 134, 0.742);
+  border-right: 1px solid rgba(134, 134, 134, 0.742);
+  border-left: 5px solid rgba(134, 134, 134, 0.742);
+}
+.signout{
+  padding-left: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#signout{
+  overflow: hidden;
+  cursor: pointer;
+}
+#signout>div{
+  transform: translate(-100px);
+  transition: all 300ms ease;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.signout:hover #signout>div{
+  color: rgb(255, 55, 55);
+  transform: translate(0px);
+}
+.active{
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 5px solid white;
+}
+.activespan{
+  color: rgb(0, 130, 230);
+}
+@media screen and (min-width: 1200px){
+  .sidebar>div{
+    transform: translate(-1px)
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sidebar{
+    position: absolute;
+    z-index: 100000;
+   /* heigh?t: 90%; */
+   padding: 1rem;
+   display: flex;
+   flex-direction: row;
+    overflow: hidden;
+    margin-left: 0;
+  }
+  .sidebar .logo{
+    margin-top: 5px;
+  }
+  .sidebar .image{
+    display: block;
+    background: transparent;
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    transition:  all 400ms ease;
+  }
+  .sidebar>div{
+    /* position: absolute; */
+    width: 15rem;
+    background: #2a2a2a;
+    border: 1px solid white;
+    border-radius: 25px;
+    height: 500px;
+    transition:  all 300ms ease;
+  }
+}
